@@ -2,6 +2,10 @@
 
 #### Grégoire JARRY - 3SI3
 
+# Scanning
+
+![alt text](https://github.com/enzyro/rapportvuln/blob/master/nmap.png)
+
 # RCE - Unreal IRC Daemon
 
 Une backdoor étant resté secrète pendant plusieurs mois est présente dans cette version du client IRC Unreal. Cette backdoor est déclenché par l'envoi de la chaine "AB" suivi de n'importe quelle commande système. Il existe un module metasploit permettant d'exploiter cette vulnérabilité.
@@ -20,6 +24,7 @@ Une backdoor étant resté secrète pendant plusieurs mois est présente dans ce
 
 - obtention d'un shell root
 
+![alt text](https://github.com/enzyro/rapportvuln/blob/master/irc_daemon.png)
 
 ## score CVSS
 | Nom | Niveau |
@@ -55,6 +60,10 @@ La fonctionnalité MS-RPC permet à un attaquant d'executer des commandes à tra
 
 - obtention d'un shell root
 
+![alt text](https://github.com/enzyro/rapportvuln/blob/master/samba%20search.png)
+
+
+![alt text](https://github.com/enzyro/rapportvuln/blob/master/samba%20shell.png)
 
 ## score CVSS
 | Nom | Niveau |
@@ -76,7 +85,6 @@ La fonctionnalité MS-RPC permet à un attaquant d'executer des commandes à tra
 En exploitant la DVWA (Damn Vulnerale Web Application), il a été possible de créer un reverse shell et ainsi d'avoir un accès à la machine grâce au module d'Injection de Commande.
 
 
-
 ## Démarche de reproduction
 
 - Se connecter à l'application web DVWA
@@ -91,6 +99,13 @@ En exploitant la DVWA (Damn Vulnerale Web Application), il a été possible de c
 
 - obtention d'un shell avec le user www-data
 
+
+
+![alt text](https://github.com/enzyro/rapportvuln/blob/master/dvwa%20accueil.png)
+
+![alt text](https://github.com/enzyro/rapportvuln/blob/master/dvwa%20reverse.png)
+
+![alt text](https://github.com/enzyro/rapportvuln/blob/master/reverse%20listener.png)
 
 ## score CVSS
 | Nom | Niveau |
